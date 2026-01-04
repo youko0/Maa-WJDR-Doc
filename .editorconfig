@@ -1,0 +1,6 @@
+# http://editorconfig.org
+root = true
+
+[*]
+# 限制代码行长度为 160 字符
+max_line_length = 185
