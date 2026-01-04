@@ -103,7 +103,7 @@ warehousePhysicalStrengthEnable = true
 warehousePhysicalStrengthCollectionTime = 60
 # 游历补给任务是否启用
 travelSupplyEnable = true
-# 角色切换任务是否启用（使用时，建议先开启，然后让用户自己执行角色切换任务，然后根据需要修改“角色切换用户名列表”属性）
+# 角色切换任务是否启用（使用时，建议先开启，然后让应用自动执行角色切换任务，然后根据需要修改“角色切换用户名列表”属性）
 roleSwitchEnable = false
 # 角色切换间隔，单位分钟
 roleSwitchInterval = 60
@@ -119,7 +119,7 @@ openAssembleEnable = true
 arenaEnable = true
 # 竞技场执行时间
 arenaExecuteTime = "23:05"
-# 竞技场挑战战力倍数（）
+# 竞技场挑战战力倍数
 arenaChallengeMultiple = 0.85
 ```
 
