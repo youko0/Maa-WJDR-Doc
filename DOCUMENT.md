@@ -7,7 +7,7 @@
 
 ## 使用环境
 
-<h3>推荐使用<font color=#c00000>MuMu模拟器</font></h3>
+<h4>推荐使用<font color=#c00000>MuMu模拟器</font></h4>
 
 修改模拟器分辨率为**手机**分辨率，**720*1280**、**1080*1920**均可。
 
@@ -31,7 +31,7 @@
 
 #### 连接模拟器
 
-运行软件后，自信阅读公告后，关闭公告弹窗。点击左上角`连接模拟器`按钮，在连接设备弹窗中点击`一键连接设备`按钮。
+运行软件后，仔细阅读公告后，关闭公告弹窗。点击左上角`连接模拟器`按钮，在连接设备弹窗中点击`一键连接设备`按钮。
 
 > 注意：在连接前，请先启动模拟器，启动游戏，并确定进入首页！！！
 
@@ -76,6 +76,7 @@ lighthouseIntelligenceEnable = true
 snowfieldTradeRouteEnable = true
 # 雪原商路分享列表（可自由增减）
 snowfieldTradeRouteShareList = [
+    # 0<=战力<90,000,000并且货物品质>=5的目标会被分享至“低战专用”的群聊
     {"targetName": "低战专用", "powerMinNum": "0", "powerMaxNum": "90,000,000", "goodsQuality": 5},
     {"targetName": "雪原商路", "powerMinNum": "90,000,000", "powerMaxNum": "250,000,000", "goodsQuality": 0},
     {"targetName": "联盟", "powerMinNum": "250,000,000", "powerMaxNum": "350,000,000", "goodsQuality": 0},
@@ -119,7 +120,7 @@ openAssembleEnable = true
 arenaEnable = true
 # 竞技场执行时间
 arenaExecuteTime = "23:05"
-# 竞技场挑战战力倍数
+# 竞技场挑战战力倍数（优先挑战低于阈值战力的目标）
 arenaChallengeMultiple = 0.85
 ```
 
