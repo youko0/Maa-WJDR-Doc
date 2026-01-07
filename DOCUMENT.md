@@ -116,12 +116,14 @@ journeyToTheLightEnable = true
 trainSoldiersEnable = [true, true, true]
 # 打开集结是否启用
 openAssembleEnable = true
-# 竞技场是否启用（尚未完成）
+# 竞技场是否启用
 arenaEnable = true
 # 竞技场执行时间
 arenaExecuteTime = "23:05"
 # 竞技场挑战战力倍数（优先挑战低于阈值战力的目标）
 arenaChallengeMultiple = 0.85
+# 战争学院是否解锁（true时为5爪野兽，false时为4爪野兽）【临时配置，后续版本将会删除】
+warCollegeUnlocked = true
 ```
 
 ## 常见问题
