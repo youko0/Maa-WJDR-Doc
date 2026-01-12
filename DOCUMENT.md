@@ -5,6 +5,11 @@
 
 <div align="center" style="font-size: 30px;font-weight: bold;">Maa-WJDR</div>
 
+## 现有功能
+
+银行存储、英雄招募、仓库补给、仓库体力、联盟捐献、探险奖励、生命之树、晨曦回礼、训练士兵、联盟互助、任务奖励领取、联盟宝箱、邮件领取、游荡商人、统帅奖励、储值中心、宠物寻宝、宠物技能、采集资源、领主指令、灯塔情报、炼晶实验室、游历补给、雪原商路、体力补给、逐光之旅、角色切换、打开集结、竞技场。
+
+
 ## 使用环境
 
 <h4>推荐使用<font color=#c00000>MuMu模拟器</font></h4>
@@ -25,7 +30,7 @@
 
 > 建议将解压后的`Maa-WJDR`目录移动至不包含中文字符的目录下，如：`D:\Program Files\Maa-WJDR`。
 
-[<font color=#c00000>！！！启动报错！！！看这里</font>](#启动应用报错)
+[<font color=#c00000>！！！启动报错！！！看这里</font>](#启动助手报错)
 
 
 #### 连接模拟器
@@ -36,26 +41,26 @@
 
 ### 版本更新
 
-更新软件时，删除目录下的`_internal`、`assets`和`Maa-WJDR.exe `文件目录，将压缩包中的对应的三个文件目录复制到目录下，最后运行`Maa-WJDR.exe`。
+更新软件时，删除助手目录下的`_internal`、`assets`和`Maa-WJDR.exe `文件目录，将压缩包中的对应的三个文件目录复制到助手目录下，最后运行`Maa-WJDR.exe`。
 
 ```text
 MAA-WJDR
 ├─ _internal // 更新时需要替换的目录
 ├─ assets    // 更新时需要替换的目录
-├─ config    // 应用配置文件目录，更新时保留（启动应用后产生）
-├─ log       // 日志文件目录（启动应用后产生）
-├─ user_data // 用户配置文件目录（启动应用后产生）
+├─ config    // 助手配置文件目录，更新时保留（启动助手助手后产生）
+├─ log       // 日志文件目录（启动助手后产生）
+├─ user_data // 用户配置文件目录（启动助手后产生）
 │  └─ 888888888.json // 用户ID为888888888的配置文件（连接模拟器成后产生）
-└─ Maa-WJDR.exe      // 应用启动程序
+└─ Maa-WJDR.exe      // 助手启动程序
 ```
 
 ### 任务配置
 
 **修改任务配置的正确步骤：**
 
-1. **关闭应用**：确保已经连接模拟器并成功识别到用户账号ID后，关闭应用；
-2. **修改配置**：在应用所在目录中`user_data`文件夹下，在里找要该配置的账号，用文本编辑器软件（如记事本）打开以账号ID命名的`.json`文件。`true`为开，`false`为关，**修改后保存文件！**
-3. **启动应用**：保存修改后的配置文件，并启动应用。
+1. **关闭助手**：确保已经连接模拟器并成功识别到用户账号ID后，关闭助手；
+2. **修改配置**：在助手所在目录中`user_data`文件夹下，在里找要该配置的账号，用文本编辑器软件（如记事本）打开以账号ID命名的`.json`文件。`true`为开，`false`为关，**修改后保存文件！**
+3. **启动助手**：保存修改后的配置文件，并启动助手。
 
 #### 配置信息
 
@@ -142,9 +147,9 @@ warCollegeUnlocked = true
 
 ## 常见问题
 
-### 启动应用报错：
+### 启动助手报错：
 
-若启动应用出现以下报错信息，则为缺少[Visual C++ Redistributable](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-c-redistributable-v14)运行环境，根据电脑cpu架构选择版本下载安装即可。
+若启动助手出现以下报错信息，则为缺少[Visual C++ Redistributable](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-c-redistributable-v14)运行环境，根据电脑cpu架构选择版本下载安装即可。
 
 fileNotfoundError：`Maa-WJDR\\_internal\\maa\\bin\\MaaToolkit.dll`
 ![fileNotfoundError](imags/fileNotfoundError-MaaToolkit.dll.jpg)
