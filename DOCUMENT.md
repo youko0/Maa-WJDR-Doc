@@ -39,6 +39,7 @@
 
 > 注意：在连接前，请先启动模拟器，启动游戏，并确定进入首页！！！
 
+[<font color=#c00000>！！！连接设备失败！！！看这里</font>](#连接设备失败)
 ### 版本更新
 
 更新软件时，删除助手目录下的`_internal`、`assets`和`Maa-WJDR.exe `文件目录，将压缩包中的对应的三个文件目录复制到助手目录下，最后运行`Maa-WJDR.exe`。
@@ -154,6 +155,12 @@ warCollegeUnlocked = true
 fileNotfoundError：`Maa-WJDR\\_internal\\maa\\bin\\MaaToolkit.dll`
 ![fileNotfoundError](imags/fileNotfoundError-MaaToolkit.dll.jpg)
 
+### 连接设备失败
+若连接模拟器出现以下报错信息，请尝试**重启助手**或**重启电脑**后重试。
+
+`连接设备失败: Device connection failed`
+
+![连接设备失败 Device connection failed.png](imags/%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87%E5%A4%B1%E8%B4%A5%20Device%20connection%20failed.png)
 ### 运行任务时出现乱点情况
 
 请确认模拟器分辨率为**手机**分辨率，**720*1280**、**1080*1920**均可。
