@@ -104,7 +104,7 @@ warehousePhysicalStrengthEnable = true
 warehousePhysicalStrengthCollectionTime = 60
 # 游历补给任务是否启用
 travelSupplyEnable = true
-# 角色切换任务是否启用（使用时，建议先开启，然后让应用自动执行角色切换任务，然后根据需要修改“角色切换用户名列表”属性）
+# 角色切换任务是否启用（使用时，建议先开启，然后让应用自动执行角色切换任务，然后根据需要修改“角色切换用户名列表”属性）【同手机号下的角色配置只需修改一个账号即可】
 roleSwitchEnable = false
 # 角色切换间隔，单位分钟
 roleSwitchInterval = 60
