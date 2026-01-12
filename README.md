@@ -25,9 +25,10 @@ _✨ 基于 MaaFramework 框架开发的无尽冬日助手 ✨_
 
 **Maa-WJDR** 是基于图像识别技术、模拟用户点击实现的无尽冬日自动化助手。
 
-
+## 更新日志
+[更新日志](CHANGLOG.md)
 ## 使用文档
-[DOCUMENT.md](DOCUMENT.md)
+[使用文档](DOCUMENT.md)
 
 ### 免责声明
 
