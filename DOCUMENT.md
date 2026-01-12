@@ -25,7 +25,6 @@
 
 > 建议将解压后的`Maa-WJDR`目录移动至不包含中文字符的目录下，如：`D:\Program Files\Maa-WJDR`。
 
-
 [<font color=#c00000>！！！启动报错！！！看这里</font>](#启动应用报错)
 
 
@@ -55,10 +54,12 @@ MAA-WJDR
 **修改任务配置的正确步骤：**
 
 1. **关闭应用**：确保已经连接模拟器并成功识别到用户账号ID后，关闭应用；
-2. **修改配置**：在应用所在目录中`user_data`文件夹下，在里找要该配置的账号，用文本编辑器软件（如记事本）打开以账号ID命名的.json文件。**修改后保存文件！**
+2. **修改配置**：在应用所在目录中`user_data`文件夹下，在里找要该配置的账号，用文本编辑器软件（如记事本）打开以账号ID命名的`.json`文件。`true`为开，`false`为关，**修改后保存文件！**
 3. **启动应用**：保存修改后的配置文件，并启动应用。
 
-**true为开，false为关**
+#### 配置信息
+
+****
 
 ```python
 # 游荡商人任务是否启用
@@ -104,7 +105,7 @@ warehousePhysicalStrengthEnable = true
 warehousePhysicalStrengthCollectionTime = 60
 # 游历补给任务是否启用
 travelSupplyEnable = true
-# 角色切换任务是否启用（使用时，建议先开启，然后让应用自动执行角色切换任务，然后根据需要修改“角色切换用户名列表”属性）【同手机号下的角色配置只需修改一个账号即可】
+# 角色切换任务是否启用【使用说明详见“角色切换”】
 roleSwitchEnable = false
 # 角色切换间隔，单位分钟
 roleSwitchInterval = 60
@@ -114,6 +115,8 @@ roleSwitchNameList = null
 journeyToTheLightEnable = true
 # 训练士兵是否启用（依次为盾矛射）
 trainSoldiersEnable = [true, true, true]
+# 训练士兵是否优先晋升
+barracksPriorityPromotion = true
 # 打开集结是否启用
 openAssembleEnable = true
 # 竞技场是否启用
@@ -125,6 +128,17 @@ arenaChallengeMultiple = 0.85
 # 战争学院是否解锁（true时为5爪野兽，false时为4爪野兽）【临时配置，后续版本将会删除】
 warCollegeUnlocked = true
 ```
+
+#### 角色切换
+
+角色切换**默认为关闭状态**。
+
+角色切换使用推荐步骤：
+
+1. 开启角色切换任务，然后启动`Maa-WJDR助手`；[<font>修改方式详见任务配置</font>](#任务配置)
+2. 让助手自动执行角色切换任务，此时助手会根据识别到的角色列表生成`roleSwitchNameList`配置，根据自己需要进行增减即可。
+
+> **同一手机号下的角色**配置，只需修改**当前登录的角色**即可。
 
 ## 常见问题
 
