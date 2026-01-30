@@ -160,7 +160,16 @@ fileNotfoundError：`Maa-WJDR\\_internal\\maa\\bin\\MaaToolkit.dll`
 
 `连接设备失败: Device connection failed`
 
+> 若连接地址不是`127.0.0.1:xxxx`，则需要将模拟器的网络桥接模式关闭后再次尝试连接。
+
 ![连接设备失败 Device connection failed.png](imags/%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87%E5%A4%B1%E8%B4%A5%20Device%20connection%20failed.png)
 ### 运行任务时出现乱点情况
 
 请确认模拟器分辨率为**手机**分辨率，**720*1280**、**1080*1920**均可。
+
+### 新区30级后灯塔情报无法识别到野兽情报
+
+这是因为区服的`战争学院`没有解锁，助手前期默认30级以后野兽情报为`5爪野兽`，及解锁`战争学院`后的野兽，为了避免老用户大量修改配置，目前继续沿用默认已解锁的状态。
+
+解决办法：按照修改配置的方式，将`warCollegeUnlocked`改为`false`即可。
+
