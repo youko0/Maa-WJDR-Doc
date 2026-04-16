@@ -7,7 +7,7 @@
 
 ## 现有功能
 
-银行存储、英雄招募、仓库补给、仓库体力、联盟捐献、探险奖励、生命之树、晨曦回礼、训练士兵、联盟互助、任务奖励领取、联盟宝箱、邮件领取、游荡商人、统帅奖励、储值中心、宠物寻宝、宠物技能、采集资源、领主指令、灯塔情报、炼晶实验室、游历补给、雪原商路、体力补给、逐光之旅、角色切换、打开集结、竞技场。
+银行存储、英雄招募、仓库补给、仓库体力、联盟捐献、探险奖励、生命之树、晨曦回礼、训练士兵、联盟互助、任务奖励领取、联盟宝箱、邮件领取、游荡商人、统帅奖励、储值中心、宠物寻宝、宠物技能、采集资源、领主指令、灯塔情报、炼晶实验室、游历补给、雪原商路、体力补给、逐光之旅、角色切换、打开集结、竞技场、巨熊行动。
 
 
 ## 使用环境
@@ -67,7 +67,7 @@ MAA-WJDR
 
 ****
 
-```python
+```typescript
 # 游荡商人任务是否启用
 wanderingMerchantEnable = true
 # 游荡商人任务折扣商品列表（可删除内容，删除成对大括号{}即可，如删除整个：{"id": "ExpeditionSkillBook", "name": "史诗远征技能书", "discount_ge_buy": "-25%", }。）
@@ -125,6 +125,7 @@ trainSoldiersEnable = [true, true, true]
 barracksPriorityPromotion = true
 # 打开集结是否启用
 openAssembleEnable = true
+### 【竞技场】
 # 竞技场是否启用
 arenaEnable = true
 # 竞技场执行时间
@@ -133,6 +134,30 @@ arenaExecuteTime = "23:05"
 arenaChallengeMultiple = 0.85
 # 战争学院是否解锁（true时为5爪野兽，false时为4爪野兽）【临时配置，后续版本将会删除】
 warCollegeUnlocked = true
+### 【巨熊行动】
+# 巨熊行动是否启用
+operationGiantBearEnable = false
+# 巨熊行动上一次执行日期（上次开启日期，如：2026-04-04）（为None时，停止执行；活动结束后，自动更新该日期）！！！注意要加英文双引号！！！
+operationGiantBearLastExecuteDate = "2026-04-04"
+# 巨熊行动开启时间（如：21:00，为None时，停止执行）
+operationGiantBearOpenTime = "21:00"
+# 巨熊行动使用宠物技能
+operationGiantBearUsePetSkill = true
+# 巨熊行动前是否召回行军队列
+operationGiantBearBeforeRecallArmy = true
+# 巨熊行动前召回行军队列分钟数，（提前几分钟召回，默认为5分钟）
+operationGiantBearBeforeRecallArmyMinute = 5
+# 巨熊行动是否发起集结
+operationGiantBearInitiateAssemble = true
+# 巨熊行动发起集结编队（1~8），无效值则不发起集结，（请勿设置未解锁的编组和未配置的编组），暂时只支持到8
+operationGiantBearInitiateAssembleFormation = 1
+# 巨熊行动-距离狩猎陷阱单程耗时（单位秒），每次活动首次发车时自动获取，若识别失败则使用配置时间
+operationGiantBearDistanceTrapOneWayTime = 10
+# 巨熊行动是否加入集结
+self.operationGiantBearJoinAssemble = true
+# 巨熊行动加入集结编队（1~7），无效值则不加入集结（请勿设置重复的编组、未解锁的编组和未配置的编组），暂时只支持到7
+# ！！！需要消除编组的气泡！！！  若编组存在气泡，则不出征
+self.operationGiantBearJoinAssembleFormations = [1, 2, 3, 4]
 ```
 
 #### 角色切换
