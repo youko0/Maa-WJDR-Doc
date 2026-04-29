@@ -3,7 +3,8 @@
   <img alt="LOGO" src="imags/logo.png" width="256" height="256" />
 </p>
 
-<div align="center" style="font-size: 30px;font-weight: bold;">Maa-WJDR</div>
+<div align="center" style="font-size: 30px;font-weight: bold;">游戏伙伴</div>
+
 
 ## 现有功能
 
@@ -26,9 +27,9 @@
 
 #### 启动软件
 
-解压下载好的压缩包，运行`Maa-WJDR.exe`即可。
+解压下载好的压缩包，运行`GamePal.exe`即可。
 
-> 建议将解压后的`Maa-WJDR`目录移动至不包含中文字符的目录下，如：`D:\Program Files\Maa-WJDR`。
+> 建议将解压后的`GamePal`目录移动至不包含中文字符的目录下，如：`D:\Program Files\GamePal`。
 
 [<font color=#c00000>！！！启动报错！！！看这里</font>](#启动助手报错)
 
@@ -42,26 +43,26 @@
 [<font color=#c00000>！！！连接设备失败！！！看这里</font>](#连接设备失败)
 ### 版本更新
 
-更新软件时，删除助手目录下的`_internal`、`assets`和`Maa-WJDR.exe `文件目录，将压缩包中的对应的三个文件目录复制到助手目录下，最后运行`Maa-WJDR.exe`。
+更新软件时，删除软件目录下的`_internal`、`assets`和`GamePal.exe`文件，将压缩包中的对应内容复制到原目录下，最后运行`GamePal.exe`。
 
 ```text
-MAA-WJDR
+GamePal
 ├─ _internal // 更新时需要替换的目录
 ├─ assets    // 更新时需要替换的目录
-├─ config    // 助手配置文件目录，更新时保留（启动助手助手后产生）
-├─ log       // 日志文件目录（启动助手后产生）
+├─ config    // 软件配置文件目录，更新时保留（启动软件后产生）
+├─ log       // 日志文件目录（启动软件后产生）
 ├─ user_data // 用户配置文件目录（启动助手后产生）
 │  └─ 888888888.json // 用户ID为888888888的配置文件（连接模拟器成后产生）
-└─ Maa-WJDR.exe      // 助手启动程序
+└─ GamePal.exe       // 软件启动程序
 ```
 
 ### 任务配置
 
 **修改任务配置的正确步骤：**
 
-1. **关闭助手**：确保已经连接模拟器并成功识别到用户账号ID后，关闭助手；
-2. **修改配置**：在助手所在目录中`user_data`文件夹下，在里找要该配置的账号，用文本编辑器软件（如记事本）打开以账号ID命名的`.json`文件。`true`为开，`false`为关，**修改后保存文件！**
-3. **启动助手**：保存修改后的配置文件，并启动助手。
+1. **关闭软件**：确保已经连接模拟器并成功识别到用户账号ID后，关闭软件；
+2. **修改配置**：在软件所在目录的`user_data`文件夹中，找到对应账号ID命名的`.json`文件，用文本编辑器软件（如记事本）打开。`true`为开，`false`为关，**修改后保存文件！**
+3. **启动软件**：保存修改后的配置文件，并重新启动软件。
 
 #### 配置信息
 
@@ -166,22 +167,22 @@ self.operationGiantBearJoinAssembleFormations = [1, 2, 3, 4]
 
 角色切换使用推荐步骤：
 
-1. 开启角色切换任务，然后启动`Maa-WJDR助手`；[<font>修改方式详见任务配置</font>](#任务配置)
-2. 让助手自动执行角色切换任务，此时助手会根据识别到的角色列表生成`roleSwitchNameList`配置，根据自己需要进行增减即可。
+1. 开启角色切换任务，然后启动`游戏伙伴`；[<font>修改方式详见任务配置</font>](#任务配置)
+2. 让软件执行一次角色切换任务，此时会根据识别到的角色列表生成`roleSwitchNameList`配置，根据自己需要进行增减即可。
 
 > **同一手机号下的角色**配置，只需修改**当前登录的角色**即可。
 
 ## 常见问题
 
-### 启动助手报错：
+### 启动软件报错：
 
 若启动助手出现以下报错信息，则为缺少[Visual C++ Redistributable](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-c-redistributable-v14)运行环境，根据电脑cpu架构选择版本下载安装即可。
 
-fileNotfoundError：`Maa-WJDR\\_internal\\maa\\bin\\MaaToolkit.dll`
+fileNotfoundError：`GamePal\\_internal\\maa\\bin\\MaaToolkit.dll`
 ![fileNotfoundError](imags/fileNotfoundError-MaaToolkit.dll.jpg)
 
 ### 连接设备失败
-若连接模拟器出现以下报错信息，请尝试**重启助手**或**重启电脑**后重试。
+若连接模拟器出现以下报错信息，请尝试**重启软件**或**重启电脑**后重试。
 
 `连接设备失败: Device connection failed`
 
@@ -194,7 +195,7 @@ fileNotfoundError：`Maa-WJDR\\_internal\\maa\\bin\\MaaToolkit.dll`
 
 ### 新区30级后灯塔情报无法识别到野兽情报
 
-这是因为区服的`战争学院`没有解锁，助手前期默认30级以后野兽情报为`5爪野兽`，及解锁`战争学院`后的野兽，为了避免老用户大量修改配置，目前继续沿用默认已解锁的状态。
+这是因为区服的`战争学院`没有解锁，软件前期默认30级以后野兽情报为`5爪野兽`，即解锁`战争学院`后的野兽。为了避免老用户大量修改配置，目前继续沿用默认已解锁的状态。
 
 解决办法：按照修改配置的方式，将`warCollegeUnlocked`改为`false`即可。
 
